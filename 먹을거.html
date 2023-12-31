@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰</title>
+</head>
+<body>
+    <header>
+    <h1>먹을거</h1>
+    <hr>
+    </header>
+    <ul>
+        <li><a href="index.html">메인</a></li>
+        <li><a href="옷.html">옷</a></li>
+        <li><a href="신발.html">신발</a></li>
+    </ul>
+    <section>
+      <div class="product">
+        <h2>치킨</h2>
+        <P><strong>5년이상</strong> 먹어도 <u>깔끔한</u> 이맛! 치킨</P>
+        <img src="치킨.jpg".jpg" width="300">
+        <p>가격: 17.000W</p>
+        <button onclick="addToCart('치느님', 17)">장바구니에 담기</button>
+      </div>
+   </section>
+   <section>
+   <div class="product">
+            <h2>상품 1</h2>
+            <p>상품 설명이 들어갑니다.</p>
+            <p>가격: $19.99</p>
+            <button onclick="addToCart('Product 1', 19.99)">장바구니에 담기</button>
+        </div>
+    </section>
+   <footer>
+    <p>&copy; 2023 간단한 쇼핑몰</p>
+</footer>
+
+<script>
+    function addToCart(productName, price) {
+        alert(productName + '이(가) 장바구니에 담겼습니다. 가격: $' + price);
+    }
+</script>
+  
+</body>
